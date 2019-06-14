@@ -8,9 +8,6 @@ I created an online version of the card game War for my GA project 1.
 
 Each player turns up a card at the same time and the player with the higher card takes both cards and puts them, face down, on the bottom of his stack. If the cards are the same rank, it is War. Each player turns up one card face down and one card face up. The player with the higher cards takes both piles (eight cards).
 
-# Gif for your enjoyment
-![](warGameGif.gif)
-
 
 Public link to my game: 
 https://rivedroz23.github.io/war-game/Sources: 
