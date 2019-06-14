@@ -13,9 +13,7 @@ Each player turns up a card at the same time and the player with the higher card
 
 
 Public link to my game: 
-https://s3.us-east-2.amazonaws.com/riverdroz.com/index.html
-
-Sources: 
+https://rivedroz23.github.io/war-game/Sources: 
 
 [Google](https://www.google.com)
 
