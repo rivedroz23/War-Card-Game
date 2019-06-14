@@ -1,6 +1,7 @@
 # war-game
 
-My war game repo for GA. 
+War game repo for GA. 
+Made by River Droz
 
 I created an online version of the card game War for my GA project 1. 
 
@@ -10,8 +11,11 @@ Each player turns up a card at the same time and the player with the higher card
 
 
 Public link to my game: 
-https://rivedroz23.github.io/war-game/Sources: 
+https://rivedroz23.github.io/war-game/
 
+
+
+Sources: 
 [Google](https://www.google.com)
 
 [Udemy](www.Udemy.com)
