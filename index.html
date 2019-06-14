@@ -1,0 +1,39 @@
+<head>
+    <meta charset="UTF-8">
+    <title>title</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css"> 
+  </head>
+  <body>
+    <header>
+      <h1>War Card Game</h1>
+    </header>
+    <main>
+    <h2 id="instructions">Instructions:</h2>
+    <p>Each player turns up a card at the same time and the player with the higher card takes both cards and puts them, face down, on the bottom of his stack. If the cards are the same rank, it is War. Each player turns up one card face down and one card face up. The player with the higher cards takes both piles (six cards).</p>
+    </main>
+  <div id="wrapper"> 
+  <div id="message">Click Fight to Start Game</div>
+  <div id="board">
+  <div id="player1" class="players">
+  <div class="scorediv">SCORE:<span class="score"></span></div>
+  <div class="hand"></div>
+  </div>
+  <div id="player2" class="players">
+  <div class="scorediv">SCORE:<span class="score"></span></div>
+  <div class="hand"></div>
+  </div>
+  <div id="action">
+  <button id="btnBattle" type="button" class="btn">Global Thermonuclear War</button>
+  <button id="btnReset" type="button" class="btn2" onclick="resetGame()">Reset Game</button>
+  </div>
+  </div>
+  </div>
+   <script src="js/script.js">
+    </script>
+    <footer>
+      <div class="copyright">
+      <p>Copyright 2019 @River Droz</p>
+    </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,112 @@
+.icard {
+  position: absolute;
+  padding: 10px;
+  height: 200px;
+  width: 150px;
+  border: 1px solid black;
+  border-radius: 15px;
+  background-color: white;
+  display: inline-block;
+  top: 0;
+  left: 0;
+}
+
+body {
+  background-image: url("img/camoback.png");
+  background: cover;
+}
+h1 {
+  
+  font-weight: 400;
+  letter-spacing: 1px;
+  font-size: 45px;
+  margin: 0;
+  text-align: center;
+  font-family: cursive;
+  color:white;
+}
+
+.hearts .suit::after{ content: '\2665'; }
+.spades .suit::after{ content: '\2660'; }
+.clubs .suit::after{ content: '\2663'; }
+.diams .suit::after{ content: '\2666'; }
+.spades, .clubs{color:black;}
+.hearts, .diams{color:red;}
+.hand {
+  position: relative;
+}
+
+.players {
+  float: left;
+  width: 49%;
+  min-height: 300px;
+  border: 1px solid #ddd;
+}
+.score{
+  font-size:1.5em;
+  color: white;
+  
+
+}
+
+.scorediv{
+  font-size:2em;
+color: white; 
+}
+#message{
+  font-size:1.2em;
+  color:white;
+  background-color: black;
+  padding:5px;
+}
+.btn{
+  border-radius: 5px;
+  padding:9px 20px;
+  color:white;
+  display: inline-block;
+  text-align: center;
+  text-shadow: 1px 1px #000;
+  font-size:20px; 
+}
+#btnBattle{
+  background-color: black;
+}
+
+.btn2{
+  border-radius: 5px;
+  padding:9px 20px;
+  color: white;
+  display: inline-block;
+  text-align: center;
+  text-shadow: 1px 1px #000;
+  font-size:20px;
+}
+#btnReset{
+  background-color: black;
+}
+header {
+  font-family: Raleway, sans-serif;
+  font-weight: 400;
+  color: #FFFFFF;
+  letter-spacing: 1px ;
+  font-size: 45px;
+  background-color: black;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-right: 20px;
+  padding-left: 20px;
+  margin: 0;
+  
+  }
+  .copyright {
+    color: white; 
+  }
+  .player1-card, .player2-card {
+    position:absolute;
+  }
+/*#btnBattle10{
+  background-color: blue;
+}
+#btnBattle50{
+  background-color: green;
+}*/
