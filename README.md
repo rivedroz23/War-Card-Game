@@ -29,3 +29,7 @@ Sources:
 
 [Codementor](www.codementor.com)
 
+Built with: 
+HTML
+CSS
+Javascript
