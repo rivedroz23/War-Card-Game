@@ -104,6 +104,11 @@ header {
   .player1-card, .player2-card {
     position:absolute;
   }
+
+  h2 {
+    color: white;
+  }
+
 /*#btnBattle10{
   background-color: blue;
 }

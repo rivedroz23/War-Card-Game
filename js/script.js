@@ -98,15 +98,16 @@ function attack() {
     //{} these brackets add labels to your console log values. useful when debugging. 
     //console.log({ player1, player2 });
    
-
+    //car1 and card2 and the cards in play for each player.
     var card1 = player1[0];
     var card2 = player2[0];
-
+    //the pot is each players current card in play^  
     var pot = [card1, card2];
     //the ${card.image} is called templating and it's how you add variable values to html
     p1.innerHTML = `<img src="${card1.image}" class="player11-card" />`; 
     p2.innerHTML = `<img src="${card2.image}" class="player21-card" />`; 
     checkWinner(card1,card2,pot);
+    //Update user's score after checkWinner returns and it's just a simple count of each players cards. 
     s1.innerHTML = player1.length; 
     s2.innerHTML = player2.length;  
 
@@ -114,7 +115,7 @@ function attack() {
     outputMessage("Game over"); 
   }
 }
-
+//I have to convert J,Q,K and A to numbers in order to compare
 var valuePoint ={
 "2": 2,
 "3": 3,
@@ -132,21 +133,21 @@ var valuePoint ={
 }
 // input parameters are the data needed to run the function
 function checkWinner(card1,card2,pot){
-
+  //if either player has less than 4 the game is over
   if ((player1.length <= 4) || (player2.length <= 4)){
     gameover = true; 
     return; 
   }
-
+  //cardPoint = the valuePoint of players card value  
   var card1Point = valuePoint[card1.value];
   var card2Point = valuePoint[card2.value];
-
+  //if card1point is greater than card2point then pl1 wins this pot
   if(card1Point > card2Point){
       if (pot.length === 8) {
         player1.splice(0,4);
         player2.splice(0,4);
       }
-
+      // if the pot = 2 then each player has put a card from their array into the pot
       if (pot.length === 2) {
         player1.shift();
         player2.shift();
@@ -176,19 +177,21 @@ function checkWinner(card1,card2,pot){
 
 function war(pot){
   warTime = true;
-  document.body.style.backgroundImage = "url('img/bomb.gif')";
+  //document.body.style.backgroundImage = "url('img/bomb.gif')";
   console.log("Starting War");
+  //again if either player has less than 4 cards just return
   if ((player1.length < 4) || (player2.length < 4)) {
     return;
+  //else pl1 and pl2 pot has 4 cards taken from each array; 8 total(war)
   }else {
     var player1Pot = player1.slice(0,4);
     var player2Pot = player2.slice(0,4);
-
+  //then loop through to display the card images and push them to the html page
     for(var i=1; i<4;i++){
       p1.innerHTML += `<img src="${player1Pot[i].image}" class="player1-card" style="z-index: ${i}; left: ${40*i}px"/>`;
       p2.innerHTML += `<img src="${player2Pot[i].image}" class="player1-card" style="z-index: ${i}; left: ${40*i}px"/>`;
   } 
-
+//then checkwinner between the 2 pots and push the war pot to the winners pot 
   checkWinner(player1Pot[3], player2Pot[3], [...player1Pot, ...player2Pot]);
 
   }
