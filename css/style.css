@@ -53,6 +53,7 @@ h1 {
   font-size:2em;
 color: white; 
 }
+
 #message{
   font-size:1.2em;
   color:white;
@@ -106,6 +107,10 @@ header {
   }
 
   h2 {
+    color: white;
+  }
+
+  main {
     color: white;
   }
 
